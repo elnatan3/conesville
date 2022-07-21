@@ -6,12 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!--Google Fonts-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet" />
   <!--CSS Link-->
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/responsiveNavBar.css">
+  <link rel="stylesheet" href="css/responsiveNavBar.css" />
 
   <title>Conesville</title>
 </head>
@@ -20,7 +20,7 @@
   <div class="navbar">
     <div class="navbar-content justify">
       <a href="index" class="logo">
-        <img src="/img/logo.png" alt="logo of conesville">
+        <img src="/img/logo.png" alt="logo of conesville" />
       </a>
       <div class="burger navbar-toggle toggle" id="js-navbar-toggle">
         <div class="l1"></div>
@@ -30,19 +30,40 @@
       <ul class="mainnav active" id="menu">
         <li><a href="#Home" class="navlink hover-underline">Home</a></li>
         <li><a href="#About" class="navlink hover-underline">About</a></li>
-        <li><a href="#Government" class="navlink hover-underline">Government</a></li>
-        <li><a href="#City Services" class="navlink hover-underline">City Services</a></li>
+        <li class="dropdown">
+          <!-- <a href="#Government" class="navlink hover-underline"
+              >Government
+              <span class="arrow-container"
+                ><img
+                  class="nav-arrow"
+                  src="img/arrow.png"
+                  alt="arrow" /></span
+            ></a> -->
+          <a class="dropbtn navlink">Government
+            <span class="arrow-container"><img class="nav-arrow" src="img/arrow.png" alt="arrow" /></span>
+          </a>
+          <div class="dropdown-content">
+            <a href="air-pistol-silhouette.php" class="navlink">Mayor & Council</a>
+            <a href="air-pistol-silhouette.php" class="navlink">Meeting Minutes & Agenda</a>
+            <a href="air-pistol-silhouette.php" class="navlink">Elections</a>
+          </div>
+        </li>
+        <li>
+          <a href="#City Services" class="navlink hover-underline">City Services</a>
+        </li>
         <li><a href="#Events" class="navlink hover-underline">Events</a></li>
-        <li><a href="#Contact" class="navlink hover-underline">Contact</a></li>
+        <li>
+          <a href="#Contact" class="navlink hover-underline">Contact</a>
+        </li>
       </ul>
     </div>
   </div>
   <div class="justify gallery-img">
     <div class="img-frame">
-      <img src="/img/Conesvilleback.png" alt="background image for conesville">
+      <img src="/img/Conesvilleback.png" alt="background image for conesville" />
     </div>
     <div class="justify content welcome-img">
-      <img src="/img/Welcome-to-Conesville,-Iowa.png" alt="Welcome to Conesville">
+      <img src="/img/Welcome-to-Conesville,-Iowa.png" alt="Welcome to Conesville" />
     </div>
   </div>
 </header>
@@ -53,36 +74,64 @@
   </div>
 
   <div class="justify adjust body-text">
-    <p>Conesville is a small Iowa town located in southeast Iowa near the southern tip of the converging Iowa and Cedar
-      Rivers. The town was incorporated in 1878 when eligible voters, by a majority vote, established the City of
-      Conesville. Conesville is located in Orono Township of Muscatine County, and has a strong rural connection with
-      Oakland Township located in Louisa County. The Iowa and Cedar Rivers converge about six miles south of Conesville
-      at the north end of Columbus Junction. Iowa State Highway 70 intersects the City of Conesville from north to
-      south.</p><br>
+    <p>
+      Conesville is a small Iowa town located in southeast Iowa near the
+      southern tip of the converging Iowa and Cedar Rivers. The town was
+      incorporated in 1878 when eligible voters, by a majority vote,
+      established the City of Conesville. Conesville is located in Orono
+      Township of Muscatine County, and has a strong rural connection with
+      Oakland Township located in Louisa County. The Iowa and Cedar Rivers
+      converge about six miles south of Conesville at the north end of
+      Columbus Junction. Iowa State Highway 70 intersects the City of
+      Conesville from north to south.
+    </p>
+    <br />
 
-    <p>Although no railroads currently exist in Conesville, at one time there were both east-west and north- south
-      railroads intersecting Conesville. The railroads have been abandoned and the bridges destroyed, but some bridge
-      foundation remnants remain at all three waterway crossings near Conesville: Hoben bridge on the Iowa River, the
-      Cedar River bridge just south of the area known as Edgewater, and at Cone Lake.</p><br>
+    <p>
+      Although no railroads currently exist in Conesville, at one time there
+      were both east-west and north- south railroads intersecting Conesville.
+      The railroads have been abandoned and the bridges destroyed, but some
+      bridge foundation remnants remain at all three waterway crossings near
+      Conesville: Hoben bridge on the Iowa River, the Cedar River bridge just
+      south of the area known as Edgewater, and at Cone Lake.
+    </p>
+    <br />
 
-    <p>The historical information provided about Conesville comes from “The Fork of the Rivers” , a book compiled by
-      Mabel Estle Brown in commemoration of Conesville’s Centennial celebration in 1978. The Conesville Centennial
-      Celebration was held in late summer in conjunction with Conesville Watermelon Days. Since Conesville’s early days,
-      watermelon and cantaloupe were important crops grown by local area farmers. Melon Day celebrations from 1914, 1918
-      and 1931 were featured in the book earmarking the historical significance of the annual event.</p><br>
+    <p>
+      The historical information provided about Conesville comes from “The
+      Fork of the Rivers” , a book compiled by Mabel Estle Brown in
+      commemoration of Conesville’s Centennial celebration in 1978. The
+      Conesville Centennial Celebration was held in late summer in conjunction
+      with Conesville Watermelon Days. Since Conesville’s early days,
+      watermelon and cantaloupe were important crops grown by local area
+      farmers. Melon Day celebrations from 1914, 1918 and 1931 were featured
+      in the book earmarking the historical significance of the annual event.
+    </p>
+    <br />
 
-    <p>The class of 1958 was the last class of high school seniors to graduate from the Conesville School built in 1934.
-      The school building originally included both grade and high school students but is currently used to house migrant
-      workers in the summer. From 1959 until 1981 the Conesville School building was used for teaching grade school
-      students when the Conesville School merged with Columbus Junction and Cotter Schools to form the Columbus
-      Community School District. In 1981 the building was gifted by the school district to the City of Conesville and no
-      longer used as a school. The city managed the building for several years as a community center and city hall,
-      hosting such events as community volleyball and basketball, a volunteer library, watermelon day events, school
-      reunions, and annual haunted house fundraisers.</p><br>
+    <p>
+      The class of 1958 was the last class of high school seniors to graduate
+      from the Conesville School built in 1934. The school building originally
+      included both grade and high school students but is currently used to
+      house migrant workers in the summer. From 1959 until 1981 the Conesville
+      School building was used for teaching grade school students when the
+      Conesville School merged with Columbus Junction and Cotter Schools to
+      form the Columbus Community School District. In 1981 the building was
+      gifted by the school district to the City of Conesville and no longer
+      used as a school. The city managed the building for several years as a
+      community center and city hall, hosting such events as community
+      volleyball and basketball, a volunteer library, watermelon day events,
+      school reunions, and annual haunted house fundraisers.
+    </p>
+    <br />
 
-    <p>Conesville has a post office, and three public parks. The Conesville cemetery is located just outside the city
-      limits and is maintained by the Orono Township trustees. The fire station, located on 3 rd Street, is owned and
-      operated by the Conesville Benefitted Fire District which includes all of Orono and Oakland Townships.</p>
+    <p>
+      Conesville has a post office, and three public parks. The Conesville
+      cemetery is located just outside the city limits and is maintained by
+      the Orono Township trustees. The fire station, located on 3 rd Street,
+      is owned and operated by the Conesville Benefitted Fire District which
+      includes all of Orono and Oakland Townships.
+    </p>
   </div>
 
   <div class="justify grid-1-by-3">
@@ -96,13 +145,13 @@
     <div class="justify adjust">
       <iframe
         src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23c8cbd6&ctz=America%2FChicago&showTitle=0&showNav=0&showDate=1&showPrint=0&showTabs=0&showCalendars=0&showTz=1&src=Y19rcjlqNXVhbmEyaWY2bm82Z29vYzRjcTlna0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=Y19xbHQxbTVyaTdzZGJxYmllZ2V2a3Jnc2I5MEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23F4511E&color=%23D50000"
-        style="border-width:0" width="100%" frameborder="0" scrolling="no"></iframe>
+        style="border-width: 0" width="100%" frameborder="0" scrolling="no"></iframe>
     </div>
   </div>
   <div class="justify adjust grid-2-by-2">
     <div class="grid-2-by-2-inner">
       <div class="jul-rectangle">
-        <p>JUL<br>4</p>
+        <p>JUL<br />4</p>
       </div>
       <div class="trek-fest">
         <p class="trek-text">TREK FEST</p>
@@ -115,7 +164,7 @@
     </div>
     <div class="grid-2-by-2-inner">
       <div class="jul-rectangle">
-        <p>JUL<br>4</p>
+        <p>JUL<br />4</p>
       </div>
       <div class="trek-fest">
         <p class="trek-text">TREK FEST</p>
@@ -128,7 +177,7 @@
     </div>
     <div class="grid-2-by-2-inner">
       <div class="jul-rectangle">
-        <p>JUL<br>4</p>
+        <p>JUL<br />4</p>
       </div>
       <div class="trek-fest">
         <p class="trek-text">TREK FEST</p>
@@ -141,7 +190,7 @@
     </div>
     <div class="grid-2-by-2-inner">
       <div class="jul-rectangle">
-        <p>JUL<br>4</p>
+        <p>JUL<br />4</p>
       </div>
       <div class="trek-fest">
         <p class="trek-text">TREK FEST</p>
@@ -157,7 +206,7 @@
   <footer>
     <div class="justify adjust footer-grid">
       <div class="logo-and-text">
-        <img src="img/footer-logo.png">
+        <img src="img/footer-logo.png" />
         <p>Address: jdbfwicbewibcwiecbebw</p>
         <p>Gmail: bfeibvcjesnrslbjvlae</p>
         <p>Phone: nfwkncineonscnowcnoe</p>
@@ -176,3 +225,5 @@
   </footer>
   <script src="js/responsiveNavBar.js"></script>
 </main>
+
+</html>
