@@ -36,15 +36,17 @@
 }
 
 .navbar-content {
-  min-height: 110px;
+  min-height: 80px;
   display: flex;
   justify-content: space-between;
   margin: auto;
 }
 
 .logo {
-  padding-top: 40px;
-  padding-left: 20px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding: 1em 2em;
 }
 
 .logo img {
@@ -76,17 +78,20 @@
 }
 
 .mainnav li {
-  display: flex;
+  display: grid;
   text-transform: uppercase;
+  font-weight: 600;
   position: relative;
   align-items: center;
-
 }
 
 .mainnav li a {
+  display: grid;
+  height: 100%;
   text-decoration: none;
-  color: black;
+  color: var(--main-color);
   padding: 0 20px 0 20px;
+  transition: 150ms ease
 }
 
 
@@ -96,8 +101,13 @@
   justify-content: center;
 }
 
+.mainnav li a:hover {
+  background: var(--main-color);
+  color: white;
+}
+
 .gallery-img {
-  padding-top: 140px;
+  padding-top: 100px;
   position: relative;
 }
 
@@ -169,45 +179,45 @@
 }
 
 .rectangle1 {
-  border-radius: 15px;
+  border-radius: 0 15px 15px 0;
   background-color: var(--main-color);
 }
 
 .rectangle2 {
-  border-radius: 15px;
+  border-radius: 15px 0 0 15px;
   background-color: var(--main-color);
 }
 
 .jul-rectangle {
-  width: 95px;
-  height: 160px;
   border-radius: 15px;
   background-color: var(--main-color);
   text-align: center;
+  padding: 1em 1.5em;
 }
 
 .jul-rectangle p {
   font-size: 50px;
   color: white;
-  margin-top: 25px;
 }
 
 .grid-2-by-2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  column-gap: 2em;
+  column-gap: 10em;
   row-gap: 4em;
   align-items: center;
   justify-items: center;
+  
 }
 
 .grid-2-by-2-inner {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto 1fr;
   align-items: center;
-  justify-items: center;
+  justify-items: start;
   column-gap: 1em;
+  width: 100%;
 }
 
 .trek-fest p {
@@ -227,17 +237,14 @@
 }
 
 .map-button {
-  width: 120px;
-  height: 30px;
-  border-radius: 15px;
+  width: fit-content;
+  border-radius: 5px;
+  padding: 0.2rem 1rem;
   background-color: var(--main-color);
 }
 
 .map-button p {
   color: white;
-  margin-left: 15px;
-  margin-right: 5px;
-  margin-top: 10px;
 }
 
 .grid-2-by-2 .grid-2-by-2-inner .jul-rectangle {
@@ -292,6 +299,16 @@ footer{
   object-fit: cover;
 }
 
+.schedule {
+  /* width: 90%; */
+  margin: 0 auto;
+  padding-bottom: 4rem;
+}
+
+.schedule iframe {
+  aspect-ratio : 1 / 0.6;
+}
+
 
 
 
@@ -327,8 +344,13 @@ footer{
     display: block;
     text-align: center;
     font-size: 20px;
-    padding-bottom: 20px;
   }
+
+  .mainnav li a {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
 
   .grid-2-by-2 {
     display: grid;
@@ -355,5 +377,12 @@ footer{
     text-align: center;
   }
   
+  .schedule iframe {
+    aspect-ratio : 1 / 1;
+  }
+
+  .gallery-img {
+    padding-top: 100px;
+  }
 
 }
