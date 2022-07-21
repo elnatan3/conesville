@@ -1,69 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php $title = "Home";
+include('includes/header.php'); ?>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!--Google Fonts-->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet" />
-  <!--CSS Link-->
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/responsiveNavBar.css" />
-
-  <title>Conesville</title>
-</head>
-
-<header>
-  <div class="navbar">
-    <div class="navbar-content justify">
-      <a href="index" class="logo">
-        <img src="/img/logo.png" alt="logo of conesville" />
-      </a>
-      <div class="burger navbar-toggle toggle" id="js-navbar-toggle">
-        <div class="l1"></div>
-        <div class="l2"></div>
-        <div class="l3"></div>
-      </div>
-      <ul class="mainnav active" id="menu">
-        <li><a href="#Home" class="navlink hover-underline">Home</a></li>
-        <li><a href="#About" class="navlink hover-underline">About</a></li>
-        <li class="dropdown">
-          <!-- <a href="#Government" class="navlink hover-underline"
-              >Government
-              <span class="arrow-container"
-                ><img
-                  class="nav-arrow"
-                  src="img/arrow.png"
-                  alt="arrow" /></span
-            ></a> -->
-          <a href="#Government" class="dropbtn navlink">Government
-            <span class="arrow-container"><img class="nav-arrow" src="img/arrow.png" alt="arrow" /></span>
-          </a>
-          <div class="dropdown-content">
-            <a href="air-pistol-silhouette.php" class="navlink">Mayor & Council</a>
-            <a href="air-pistol-silhouette.php" class="navlink">Meeting Minutes & Agenda</a>
-            <a href="air-pistol-silhouette.php" class="navlink">Elections</a>
-          </div>
-        </li>
-        <li>
-          <a href="#City Services" class="navlink hover-underline">City Services</a>
-        </li>
-        <li><a href="#Events" class="navlink hover-underline">Events</a></li>
-        <li>
-          <a href="#Contact" class="navlink hover-underline">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <div class="justify gallery-img">
+<div class="justify gallery-img">
     <div class="img-frame">
-      <img src="/img/Conesvilleback.png" alt="background image for conesville" />
+      <img src="/images/Conesvilleback.png" alt="background image for conesville" />
     </div>
     <div class="justify content welcome-img">
-      <img src="/img/Welcome-to-Conesville,-Iowa.png" alt="Welcome to Conesville" />
+      <img src="/images/Welcome-to-Conesville,-Iowa.png" alt="Welcome to Conesville" />
     </div>
   </div>
 </header>
@@ -203,27 +146,4 @@
     </div>
   </div>
 
-  <footer>
-    <div class="justify adjust footer-grid">
-      <div class="logo-and-text">
-        <img src="img/footer-logo.png" />
-        <p>Address: jdbfwicbewibcwiecbebw</p>
-        <p>Gmail: bfeibvcjesnrslbjvlae</p>
-        <p>Phone: nfwkncineonscnowcnoe</p>
-      </div>
-      <div class="details">
-        <p>Site Map</p>
-        <p>Home</p>
-        <p>About</p>
-        <p>Government</p>
-        <p>City Services</p>
-        <p>Events</p>
-        <p>Contact</p>
-        <p>Site by Augustana Web Guild</p>
-      </div>
-    </div>
-  </footer>
-  <script src="js/responsiveNavBar.js"></script>
-</main>
-
-</html>
+<?php include('includes/footer.php'); ?>
